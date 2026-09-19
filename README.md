@@ -23,7 +23,25 @@ The source code is not published in this repository.
 4. Connect your Kemper Profiler Player to your Mac via USB.
 5. Launch **Kemper Display**.
 
-That's it — no additional software or setup is required.
+No additional software is required.
+
+### macOS security notice
+
+Kemper Display is currently distributed without Apple notarization because the project is not enrolled in the paid Apple Developer Program.
+
+Because of this, macOS may block the application the first time you launch it.
+
+If that happens:
+
+1. Try to open **Kemper Display** once.
+2. Open **System Settings → Privacy & Security**.
+3. Scroll down to the security message about Kemper Display.
+4. Click **Open Anyway**.
+5. Confirm that you want to open the application.
+
+You only need to do this for the initial launch.
+
+Only download Kemper Display from the official **GitHub Releases** page of this repository.
 
 ## Features
 
@@ -53,9 +71,11 @@ That's it — no additional software or setup is required.
 
 ## Requirements
 
-- A Mac running macOS
+- A Mac running **macOS 13.5 or later**
 - Kemper Profiler Player
 - USB connection between the Mac and the Profiler
+
+The current build is a universal macOS application and supports both **Apple Silicon** and **Intel** Macs.
 
 ## How it works
 
