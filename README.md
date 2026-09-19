@@ -2,7 +2,7 @@
 
 A lightweight macOS menu bar companion for the **Kemper Profiler Player**.
 
-Kemper Display connects to the Profiler over USB MIDI, shows the current Rig information in the macOS menu bar, and serves a responsive local web interface that can be opened from a phone or tablet on the same network.
+Kemper Display connects to the Profiler over USB MIDI, shows the current Rig information in the macOS menu bar, and provides a responsive local web interface that can be opened from a phone or tablet on the same network.
 
 > **Unofficial community project.**  
 > Kemper Display is not affiliated with, endorsed by, or supported by Kemper GmbH.
@@ -25,23 +25,29 @@ The source code is not published in this repository.
 
 No additional software is required.
 
-### macOS security notice
+### First launch on macOS
 
-Kemper Display is currently distributed without Apple notarization because the project is not enrolled in the paid Apple Developer Program.
-
-Because of this, macOS may block the application the first time you launch it.
+Kemper Display is currently distributed without Apple notarization. Depending on your macOS security settings, macOS may block the application the first time you open it.
 
 If that happens:
 
 1. Try to open **Kemper Display** once.
-2. Open **System Settings → Privacy & Security**.
-3. Scroll down to the security message about Kemper Display.
-4. Click **Open Anyway**.
+2. Open **System Settings** → **Privacy & Security**.
+3. Scroll down to the security section.
+4. Click **Open Anyway** for Kemper Display.
 5. Confirm that you want to open the application.
 
-You only need to do this for the initial launch.
+You only need to do this for the first launch.
 
-Only download Kemper Display from the official **GitHub Releases** page of this repository.
+## Screenshots
+
+### Menu Bar App
+
+![Kemper Display menu bar interface](Screenshots/menu-bar-popup.png)
+
+### Web Interface
+
+![Kemper Display web interface](Screenshots/web-interface.png)
 
 ## Features
 
@@ -71,11 +77,10 @@ Only download Kemper Display from the official **GitHub Releases** page of this 
 
 ## Requirements
 
-- A Mac running **macOS 13.5 or later**
+- macOS 13.5 or later
+- Intel or Apple Silicon Mac
 - Kemper Profiler Player
 - USB connection between the Mac and the Profiler
-
-The current build is a universal macOS application and supports both **Apple Silicon** and **Intel** Macs.
 
 ## How it works
 
@@ -100,7 +105,7 @@ Kemper Profiler Player
                    └── Android / tablet
 ```
 
-## Web interface
+## Web Interface
 
 With Kemper Display running, choose **Open Web Interface** from the menu bar.
 
@@ -118,7 +123,7 @@ http://192.168.1.25:8080
 
 The web interface updates automatically when the Rig or effect state changes.
 
-## MIDI channel
+## MIDI Channel
 
 The menu bar app lets you choose:
 
@@ -139,13 +144,13 @@ TCP port 8080
 
 The phone or tablet used for the web display must be able to reach the Mac over the local network.
 
-## Current status
+## Current Status
 
 The project is currently a community beta. It has primarily been developed and tested with the **Kemper Profiler Player**.
 
 Feedback and testing on other Kemper Profiler models are welcome.
 
-## Feedback and bug reports
+## Feedback and Bug Reports
 
 Please use GitHub Issues for bug reports and compatibility feedback.
 
@@ -171,6 +176,6 @@ Adrien plays in the instrumental post-rock band **When Waves Collide**.
 
 Kemper, Profiler, and related product names and trademarks belong to their respective owners. Their use here is only to describe compatibility with the hardware.
 
-## Source code
+## Source Code
 
 The source code for Kemper Display is not distributed through this repository. This repository is used for application releases, documentation, screenshots, and issue tracking.
