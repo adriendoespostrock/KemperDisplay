@@ -7,6 +7,14 @@ Kemper Display connects to the Profiler over USB MIDI, shows the current Rig inf
 > **Unofficial community project.**  
 > Kemper Display is not affiliated with, endorsed by, or supported by Kemper GmbH.
 
+## Download
+
+Kemper Display is distributed as a compiled macOS application.
+
+**The source code is not published in this repository.**
+
+Public builds will be available from the **Releases** section of this repository.
+
 ## Features
 
 - Automatic Kemper Profiler detection over USB MIDI
@@ -30,7 +38,7 @@ Kemper Display connects to the Profiler over USB MIDI, shows the current Rig inf
 - MIDI channel selector:
   - Omni
   - MIDI channels 1–16
-- Automatic reconnection when the Profiler is unplugged and reconnected
+- Automatic detection when the Profiler is disconnected or reconnected
 - Menu bar status showing whether the Profiler is connected
 
 ## Requirements
@@ -38,7 +46,18 @@ Kemper Display connects to the Profiler over USB MIDI, shows the current Rig inf
 - macOS
 - Kemper Profiler Player
 - USB MIDI connection between the Mac and the Profiler
-- Xcode if you want to build the project from source
+
+No Xcode installation is required to use the released application.
+
+## Installation
+
+1. Download the latest release from the **Releases** section.
+2. Unzip the downloaded archive if necessary.
+3. Move **Kemper Display.app** to your Applications folder.
+4. Connect the Kemper Profiler Player to the Mac via USB.
+5. Launch Kemper Display.
+
+For public distribution, releases should be signed and notarized for macOS before being published.
 
 ## How it works
 
@@ -92,17 +111,6 @@ Kemper SysEx communication remains independent from this setting.
 
 The selected MIDI channel is saved automatically.
 
-## Building from source
-
-1. Create or open a macOS SwiftUI app project in Xcode.
-2. Add `Sources/KemperDisplayMenuBarApp.swift` to the application target.
-3. Make sure there is only one `@main` entry point in the target.
-4. Enable the network permissions required for the local web server, or disable App Sandbox for a personal build.
-5. Build and run the project.
-6. Connect the Kemper Profiler Player via USB.
-
-For a menu-bar-only application, the code uses an accessory activation policy so the app does not need to appear in the Dock.
-
 ## Network
 
 The local web interface listens on:
@@ -111,7 +119,7 @@ The local web interface listens on:
 TCP port 8080
 ```
 
-If macOS blocks the listener while App Sandbox is enabled, allow **Incoming Connections (Server)** in the target's App Sandbox capabilities.
+The phone or tablet used for the web display must be able to reach the Mac over the local network.
 
 ## Current status
 
@@ -119,11 +127,11 @@ The project is currently a community beta. It has primarily been developed and t
 
 Feedback and testing on other Kemper Profiler models are welcome.
 
-## Contributing
+## Feedback and bug reports
 
-Bug reports, compatibility feedback, and pull requests are welcome.
+Please use GitHub Issues for bug reports and compatibility feedback.
 
-When reporting a MIDI-related issue, it is useful to include:
+For MIDI-related issues, it is useful to include:
 
 - Kemper model
 - Profiler OS version
@@ -145,8 +153,6 @@ Adrien plays in the instrumental post-rock band **When Waves Collide**.
 
 Kemper, Profiler, and related product names and trademarks belong to their respective owners. Their use here is only to describe compatibility with the hardware.
 
-## License
+## Source code
 
-A license has not been selected yet.
-
-Before accepting external contributions or encouraging redistribution of the source code, add an explicit open-source license such as MIT, Apache-2.0, GPL-3.0, or another license appropriate for the project.
+The source code for Kemper Display is not distributed through this repository. This repository is used for application releases, documentation, screenshots, and issue tracking.
