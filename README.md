@@ -9,11 +9,21 @@ Kemper Display connects to the Profiler over USB MIDI, shows the current Rig inf
 
 ## Download
 
-Kemper Display is distributed as a compiled macOS application.
+Kemper Display is distributed as a ready-to-use macOS application.
 
-**The source code is not published in this repository.**
+Download the latest version from the **Releases** section of this repository.
 
-Public builds will be available from the **Releases** section of this repository.
+The source code is not published in this repository.
+
+## Installation
+
+1. Download the latest Kemper Display release.
+2. Unzip the archive if necessary.
+3. Move **Kemper Display.app** to your **Applications** folder.
+4. Connect your Kemper Profiler Player to your Mac via USB.
+5. Launch **Kemper Display**.
+
+That's it — no additional software or setup is required.
 
 ## Features
 
@@ -43,27 +53,15 @@ Public builds will be available from the **Releases** section of this repository
 
 ## Requirements
 
-- macOS
+- A Mac running macOS
 - Kemper Profiler Player
-- USB MIDI connection between the Mac and the Profiler
-
-No Xcode installation is required to use the released application.
-
-## Installation
-
-1. Download the latest release from the **Releases** section.
-2. Unzip the downloaded archive if necessary.
-3. Move **Kemper Display.app** to your Applications folder.
-4. Connect the Kemper Profiler Player to the Mac via USB.
-5. Launch Kemper Display.
-
-For public distribution, releases should be signed and notarized for macOS before being published.
+- USB connection between the Mac and the Profiler
 
 ## How it works
 
-Kemper Display communicates directly with the Profiler using CoreMIDI and Kemper SysEx messages.
+Kemper Display communicates directly with the Profiler over USB MIDI using CoreMIDI and Kemper SysEx messages.
 
-The application runs entirely from the macOS menu bar. It also starts a small HTTP server on port `8080`, allowing the current Rig and effects to be displayed in a browser on another device.
+The application runs entirely from the macOS menu bar. It also starts a small local web server on port `8080`, allowing the current Rig and effects to be displayed in a browser on another device.
 
 Typical setup:
 
@@ -84,7 +82,7 @@ Kemper Profiler Player
 
 ## Web interface
 
-With Kemper Display running, open the local web interface from the menu bar.
+With Kemper Display running, choose **Open Web Interface** from the menu bar.
 
 To display it on a phone or tablet connected to the same local network, open:
 
