@@ -41,7 +41,11 @@ You only need to do this for the first launch.
 
 ## Screenshots
 
-### Menu Bar App
+### Mac Menu Bar App
+
+![Kemper Display menu bar interface](Screenshots/menu-bar-popup.png)
+
+### Windows Menu Bar App
 
 ![Kemper Display menu bar interface](Screenshots/menu-bar-popup.png)
 
