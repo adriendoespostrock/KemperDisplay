@@ -83,8 +83,9 @@ You only need to do this for the first launch.
 
 - macOS 13.5 or later
 - Intel or Apple Silicon Mac
+- windows 11 computer
 - Kemper Profiler Player
-- USB connection between the Mac and the Profiler
+- USB connection between the Mac/PC and the Profiler
 
 ## How it works
 
