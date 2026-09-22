@@ -179,3 +179,6 @@ Kemper, Profiler, and related product names and trademarks belong to their respe
 ## Source Code
 
 The source code for Kemper Display is not distributed through this repository. This repository is used for application releases, documentation, screenshots, and issue tracking.
+
+## Just so you know
+Just for transparency: this app was vibe-coded with AI. I'm not a professional developer, just a guitarist who wanted to build a useful tool for the Kemper Player.
