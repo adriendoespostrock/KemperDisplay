@@ -47,7 +47,7 @@ You only need to do this for the first launch.
 
 ### Windows Menu Bar App
 
-![Kemper Display menu bar interface](Screenshots/menu-bar-popup.png)
+![Kemper Display menu bar interface](Screenshots/menu-windows-popup.png.png)
 
 ### Web Interface
 
